@@ -1,8 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MyTests {
-  public MyTests() {
+public class Tests {
+  public Tests() {
   }
 
   private static CompareInt[] convert(int[] arr) {

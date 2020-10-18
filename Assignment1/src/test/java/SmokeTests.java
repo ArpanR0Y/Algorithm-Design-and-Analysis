@@ -18,9 +18,9 @@ public class SmokeTests {
 
   @Test
   public void KthSmallestTestSampleHeapTest() {
-    CompareInt[] arr = convert(new int[]{4, 1, 3});
+    CompareInt[] arr = convert(new int[]{4, 1, 3, 5, 9, 23, 18, 10, 8, 11});
     try {
-      assertEquals(3, KthSmallest.heapImpl(2, arr));
+      assertEquals(8, KthSmallest.heapImpl(5, arr));
     } catch (NullPointerException e) {
       Assert.fail("Heap implementation returns a null value, make sure to implement all required functions.");
     }
@@ -28,9 +28,9 @@ public class SmokeTests {
 
   @Test
   public void KthSmallestTestSampleMergeTest() {
-    CompareInt[] arr = convert(new int[]{4, 1, 3});
+    CompareInt[] arr = convert(new int[]{4, 1, 3, 5, 9, 23, 18, 10, 8, 11});
     try {
-      assertEquals(3, KthSmallest.mergeSortImpl(2, arr));
+      assertEquals(8, KthSmallest.mergeSortImpl(5, arr));
     } catch (NullPointerException e) {
       Assert.fail("Merge Sort implementation returns a null value, make sure to implement all required functions.");
     }
@@ -38,9 +38,9 @@ public class SmokeTests {
 
   @Test
   public void KthSmallestTestSampleQuickSelectTest() {
-    CompareInt[] arr = convert(new int[]{4, 1, 3});
+    CompareInt[] arr = convert(new int[]{5, 1, 3, 6, 2});
     try {
-      assertEquals(3, KthSmallest.quickSelectImpl(2, arr));
+      assertEquals(5, KthSmallest.quickSelectImpl(4, arr));
     } catch (NullPointerException e) {
       Assert.fail("Quick Select implementation returns a null value, make sure to implement all required functions.");
     }
